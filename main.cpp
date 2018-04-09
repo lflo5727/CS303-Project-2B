@@ -1,3 +1,8 @@
+/////////////////////////////////////
+//              CS303
+//           Project 2B
+//           Liam Floyd
+////////////////////////////////////
 #include <iostream>
 
 using namespace std;
