@@ -2,10 +2,20 @@
 cs303-project2b.cbp
 bin/Debug/cs303-project2b.exe
 obj/Debug/main.o
-<<<<<<< HEAD
 cs303-project2b.layout
-=======
 CS303-Project-2B.cbp
 bin/Debug/CS303-Project-2B.exe
 a.txt
->>>>>>> e03715533e9b4e80ab4ca2b634cd0a0fa9e74e67
+.vs/groupProject2/v15/.suo
+.vs/groupProject2/v15/Browse.VC.db
+.vs/groupProject2/v15/Browse.VC.opendb
+*.tlog
+*.log
+*.vcxproj
+*.filters
+*.user
+*.sln
+*.pdb
+*.obj
+Debug/groupProject2.ilk
+Debug/groupProject2.exe
