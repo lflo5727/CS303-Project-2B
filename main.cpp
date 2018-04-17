@@ -1,7 +1,7 @@
 /////////////////////////////////////
 //              CS303
 //           Project 2B
-//           Liam Floyd
+//           Liam Floyd & Erik Rairden
 ////////////////////////////////////
 #include <iostream>
 
