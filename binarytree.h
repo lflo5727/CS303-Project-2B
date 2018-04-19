@@ -3,6 +3,8 @@
 
 #include <string>
 
+using namespace std;
+
 class binaryTree{
     private:
         struct Node{
@@ -10,14 +12,20 @@ class binaryTree{
             string code;
             Node *left;
             Node *right;
+            Node(){
+                letter = 0;
+                code = "";
+                left = NULL;
+                right = NULL;
+            }
         };
         Node *root;
 
     public:
         binaryTree();
         //Functions to add nodes and retrieve them
-        void addNode(node*&tmp, char letter, string code);
-        string getNode(node *tmp, string code);
+        void addNode(Node*&tmp, char letter, string code);
+        string getNode(Node *tmp, string code);
 
 };
 
