@@ -24,9 +24,11 @@ int main()
     string morseDecode = "_ . ... _ .. _. __.";
     binaryTree morseTree;
 
-
-
-
+    //Build the tree from file
+    while(fin >> letter){
+           fin >> code;
+           morseTree.add(letter[0], code);
+    }
 
     //Here the file will be read in to build a tree, then a string will be decoded and another one encoded
 
