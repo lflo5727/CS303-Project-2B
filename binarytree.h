@@ -25,7 +25,8 @@ class binaryTree{
         binaryTree();
         //Functions to add nodes and retrieve them
         void addNode(Node*&tmp, char letter, string code);
-        string getNode(Node *tmp, string code);
+        char getLetter(Node *tmp, string code);
+        string getCode(Node *tmp, char letter);
 
 };
 

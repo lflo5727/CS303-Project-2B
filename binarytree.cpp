@@ -26,7 +26,22 @@ void binaryTree::addNode(Node*&tmp, char letter, string code){
     }
 }
 
-string binaryTree::getNode(Node *tmp, string code){
-    //code to retrieve ASCII char of Morse Code input
-    //May need separate function to retrieve Morse code for ASCII chars
+char binaryTree::getLetter(Node *tmp, string code){
+    //Function to retrieve ASCII char of Morse Code input
+    if(tmp->letter != 0 && code.size() == 0){
+           return tmp->letter;
+    }
+    else{
+        if(code[0] == '.'){
+            return getLetter(tmp->left, code.substr(1));
+        }
+        else{
+            return getLetter(tmp->right, code.substr(1));
+        }
+    }
+}
+
+string binaryTree::getCode(Node *tmp, char letter){
+    //Function to retrieve Morse Code of ASCII input
+
 }

@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     ifstream fin("morse.txt");
-    //Open morse code file to build tree from
+    //Open Morse code file to build tree from
     if(!fin){
         cout << "Input file could not be opened. Exiting\n";
         return 0;
