@@ -19,6 +19,15 @@ int main()
         return 0;
     }
 
+    string letter, code;
+    string textEncode = "testing";
+    string morseDecode = "_ . ... _ .. _. __.";
+    binaryTree morseTree;
+
+
+
+
+
     //Here the file will be read in to build a tree, then a string will be decoded and another one encoded
 
     return 0;
