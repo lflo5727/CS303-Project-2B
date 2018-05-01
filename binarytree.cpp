@@ -14,7 +14,7 @@ void binaryTree::addNode(Node*&tmp, char letter, string code){
     }
     if(code.size() == 0){
            tmp->letter = letter;
-           tmp->code = code;
+           //tmp->code = code;
     }
     else{
         if(code[0] == '.'){
