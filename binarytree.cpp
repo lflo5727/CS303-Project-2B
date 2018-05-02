@@ -1,5 +1,6 @@
 #include "binarytree.h"
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -7,26 +8,25 @@ binaryTree::binaryTree(){
     root = NULL;
 }
 
-void binaryTree::addNode(Node*&tmp, char letter, string code){
+void binaryTree::addNode(node*&tmp, char letter, string code){
     //code to insert a new node containing the ASCII char and Morse Code
     if(tmp == NULL){
-        tmp = new Node();
+        tmp = new node();
     }
     if(code.size() == 0){
-           tmp->letter = letter;
-           //tmp->code = code;
+        tmp->letter = letter;
     }
     else{
         if(code[0] == '.'){
             addNode(tmp->left, letter, code.substr(1));
         }
-        else if(code[0] == '_'){
+        else{
             addNode(tmp->right, letter, code.substr(1));
         }
     }
 }
 
-char binaryTree::getLetter(Node *tmp, string code){
+char binaryTree::getLetter(node *tmp, string code){
     //Function to retrieve ASCII char of Morse Code input
     if(tmp->letter != 0 && code.size() == 0){
            return tmp->letter;
@@ -41,18 +41,12 @@ char binaryTree::getLetter(Node *tmp, string code){
     }
 }
 
-string binaryTree::getCode(Node *tmp, char letter){
-    //Function to retrieve Morse Code of ASCII input
-
-}
 
 void binaryTree::add(char letter, string code){
     addNode(root, letter, code);
 }
 
 char binaryTree::getL(string code){
-    getLetter(root, code);
+    return getLetter(root, code);
 }
-string binaryTree::getC(char letter){
-    getCode(root, letter);
-}
+

@@ -5,31 +5,30 @@
 
 using namespace std;
 
+struct node{
+    //Tree Node
+    char letter;
+    node *left;
+    node *right;
+    node(){
+        letter = 0;
+        left = NULL;
+        right = NULL;
+    }
+};
+
 class binaryTree{
     private:
-        struct Node{
-            char letter;
-            string code;
-            Node *left;
-            Node *right;
-            Node(){
-                letter = 0;
-                code = "";
-                left = NULL;
-                right = NULL;
-            }
-        };
-        Node *root;
-        void addNode(Node*&tmp, char letter, string code);
-        char getLetter(Node *tmp, string code);
-        string getCode(Node *tmp, char letter);
+        node *root;
+        //Functions to add nodes and retrieve them
+        void addNode(node*&tmp, char letter, string code);
+        char getLetter(node *tmp, string code);
+
     public:
         binaryTree();
-        //Functions to add nodes and retrieve them
+        //Public functions to call private ones
         void add(char letter, string code);
         char getL(string code);
-        string getC(char letter);
-
 
 };
 
